@@ -27,7 +27,7 @@ class Menu:
                         print(self.texts[number], exec(self.functions[number]))
 
 
-list_of_edges = [[1, 2], [2, 3], [3, 4]]
+list_of_edges = [[1, 2], [2, 3], [2, 5], [3, 1], [3, 4], [4, 6], [5, 3], [5, 4], [6, 1]]
 graph = Graph(list_of_edges)
 # 0 Inserting values
 functions0 = ['graph.insertValues()', 'graph.deleteLastEdge()', 'graph.clearArray()', 'mainMenu.display()']
@@ -37,8 +37,8 @@ menu0 = Menu(functions0, texts0, "Inserting values")
 functions1 = ['graph.readFile()', 'mainMenu.display()']
 texts1 = ['Insert a file name', 'Go back']
 menu1 = Menu(functions1, texts1, "Inserting a graph from the file")
-# 2 Creating graphs
-functions2 = ['graph.createGraph()', 'graph.hamCycle()', 'graph.EulerCycle()', 'mainMenu.display()']
+# 2 Creating graphs / hamiltonian and euler cycles
+functions2 = ['graph.createGraph()', 'graph.HamCycles()', 'graph.EulerCycle()', 'mainMenu.display()']
 texts2 = ['Create a graph', 'Hamilton Cycle', 'Euler Cycle', 'Go back']
 menu2 = Menu(functions2, texts2, "Creating graphs")
 # 3 Create a random graph
