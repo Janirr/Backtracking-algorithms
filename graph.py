@@ -1,4 +1,8 @@
 import random
+import time
+import sys
+
+sys.setrecursionlimit(10000)
 
 
 class Graph:
@@ -7,11 +11,11 @@ class Graph:
         self.edges = edges_array
         self.undirected_graph = []
         self.directed_graph = []
+        self.euler_graph = []
         self.hasHamCycleUndirected = False
         self.hasHamCycleDirected = False
-
-    def display(self):
-        print(*self.edges)
+        self.hasEulerCycleUndirected = False
+        self.hasEulerCycleDirected = False
 
     def insertValues(self):
         leave = False
@@ -40,14 +44,15 @@ class Graph:
                     vertexes.append(self.edges[i][0])
                     vertexes.append(self.edges[i][1])
                 n = len(set(vertexes))
-                self.undirected_graph = [[0] * n for i in range(n)]
-                self.directed_graph = [[] * n for i in range(n)]
+                self.undirected_graph = [[0] * n for _ in range(n)]
+                self.directed_graph = [[] * n for _ in range(n)]
                 for i in range(len(self.edges)):
                     x = self.edges[i][0] - 1
                     y = self.edges[i][1] - 1
                     self.undirected_graph[x][y] = 1
                     self.undirected_graph[y][x] = 1
                     self.directed_graph[x].append(y)
+                self.euler_graph = self.undirected_graph
                 print("\n-- UNDIRECTED GRAPH --")
                 print(*self.undirected_graph, sep="\n")
                 print("\n-- DIRECTED GRAPH --")
@@ -90,6 +95,7 @@ class Graph:
         while option != '':
             option = input("Enter file name: ")
             try:
+                self.clearArray()
                 f = open(option)
                 self.edges = []
                 n, k = map(int, f.readline().split())
@@ -105,6 +111,10 @@ class Graph:
     def deleteLastEdge(self):
         if len(self.edges) > 0:
             print("Deleted element: ", self.edges[-1])
+            self.hasHamCycleUndirected = False
+            self.hasHamCycleDirected = False
+            self.hasEulerCycleUndirected = False
+            self.hasEulerCycleDirected = False
             self.edges.pop()
 
     def clearArray(self):
@@ -113,6 +123,8 @@ class Graph:
         self.directed_graph = []
         self.hasHamCycleUndirected = False
         self.hasHamCycleDirected = False
+        self.hasEulerCycleUndirected = False
+        self.hasEulerCycleDirected = False
 
     def isSafe(self, v, path, pos):
         if self.undirected_graph[path[pos - 1]][v] == 0:
@@ -123,13 +135,12 @@ class Graph:
         return True
 
     def HamCycles(self):
-        self.hamCycle()
+        self.hamCycleUndirected()
         self.hamCycleDirected()
 
-    def findHamCycle(self, pos, path, visited):
+    def findHamCycleUndirected(self, pos, path, visited):
         if not self.hasHamCycleUndirected:
             if pos == len(self.undirected_graph):  # Found a cycle
-                print(self.undirected_graph[path[-1]][path[0]])
                 if self.undirected_graph[path[-1]][path[0]] != 0:
                     self.hasHamCycleUndirected = True
                     path.append(0)
@@ -143,18 +154,18 @@ class Graph:
                 if self.isSafe(v, path, pos) and not visited[v]:
                     path.append(v)
                     visited[v] = True
-                    self.findHamCycle(pos + 1, path, visited)
+                    self.findHamCycleUndirected(pos + 1, path, visited)
                     visited[v] = False
                     path.pop()
 
-    def hamCycle(self):
+    def hamCycleUndirected(self):
         if len(self.undirected_graph) > 0:
             path = [0]  # Starting from first value
             visited = [False] * (len(self.undirected_graph))
             for i in range(len(visited)):
                 visited[i] = False
             visited[0] = True
-            self.findHamCycle(1, path, visited)
+            self.findHamCycleUndirected(1, path, visited)
             if not self.hasHamCycleUndirected:
                 print("Undirected: Graf wejściowy nie zawiera cyklu.")
 
@@ -164,17 +175,17 @@ class Graph:
             path = [0]  # Starting from first value
             visited = [False] * (len(self.undirected_graph))
             visited[0] = True
-            self.findHamCycle_directed(0, path, visited)
+            self.findHamCycleDirected(0, path, visited)
             if not self.hasHamCycleDirected:
                 print("Directed: Graf wejściowy nie zawiera cyklu.")
 
-    def findHamCycle_directed(self, pos, path, visited):
+    def findHamCycleDirected(self, pos, path, visited):
         if not self.hasHamCycleDirected:
             if len(path) == len(self.directed_graph):  # Found a cycle
                 self.hasHamCycleDirected = True
                 printable_path = []
                 for i in range(len(path)):
-                    printable_path.append(path[i]+1)
+                    printable_path.append(path[i] + 1)
                 print("Directed hamiltonian cycle:", printable_path)
                 path.pop()
                 return
@@ -182,6 +193,65 @@ class Graph:
                 if not visited[self.directed_graph[pos][v]]:
                     path.append(self.directed_graph[pos][v])
                     visited[self.directed_graph[pos][v]] = True
-                    self.findHamCycle_directed(self.directed_graph[pos][v], path, visited)
+                    self.findHamCycleDirected(self.directed_graph[pos][v], path, visited)
                     visited[self.directed_graph[pos][v]] = False
                     path.pop()
+
+    def EulerCycles(self):
+        self.EulerCycleDirected()
+        self.EulerCycleUndirected()
+
+    def EulerCycleDirected(self):
+        start = time.time()
+        if len(self.directed_graph) > 0:
+            max_node = len(self.directed_graph)
+            visited_edge = [[False for _ in range(max_node + 1)] for _ in range(max_node + 1)]
+            start_node = 0
+            path = self.DFSDirected(start_node, visited_edge)
+            end = time.time()
+            if path:
+                path_returned = []
+                for i in path:
+                    path_returned.append(i + 1)
+                print("Directed graph:", path_returned, end - start)
+            else:
+                print("Directed graph: Graf wejściowy nie zawiera cyklu.", end - start, "s")
+
+    def DFSDirected(self, u, visited_edge, path=None):
+        if path is None:
+            path = []
+        path = path + [u]
+        for v in self.directed_graph[u]:
+            if not visited_edge[u][v]:
+                visited_edge[u][v], visited_edge[v][u] = True, True
+                path = self.DFSDirected(v, visited_edge, path)
+        return path
+
+    ###############################################################################
+
+    def EulerCycleUndirected(self):
+        start = time.time()
+        if len(self.undirected_graph) > 0:
+            max_node = len(self.undirected_graph)
+            visited_edge = [[False for _ in range(max_node + 1)] for _ in range(max_node + 1)]
+            start_node = 0
+            path = self.DFSUndirected(start_node, visited_edge)
+            end = time.time()
+            if path:
+                self.hasEulerCycleUndirected = True
+                path_returned = []
+                for i in path:
+                    path_returned.append(i + 1)
+                print("Undirected graph:", path_returned, end - start, "s")
+            else:
+                print("Undirected graph: Graf wejściowy nie zawiera cyklu.", end - start, "s")
+
+    def DFSUndirected(self, u, visited_edge, path=None):
+        if path is None:
+            path = []
+        path = path + [u]
+        for v in range(len(self.undirected_graph[u])):
+            if not visited_edge[u][v] and self.undirected_graph[u][v] == 1:
+                visited_edge[u][v], visited_edge[v][u] = True, True
+                path = self.DFSUndirected(v, visited_edge, path)
+        return path
