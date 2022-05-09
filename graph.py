@@ -1,8 +1,7 @@
 import random
 import time
 import sys
-
-sys.setrecursionlimit(10000)
+sys.setrecursionlimit(10000000)
 
 
 class Graph:
@@ -202,24 +201,20 @@ class Graph:
         self.EulerCycleUndirected()
 
     def EulerCycleDirected(self):
-        start = time.time()
         if len(self.directed_graph) > 0:
             max_node = len(self.directed_graph)
             visited_edge = [[False for _ in range(max_node + 1)] for _ in range(max_node + 1)]
             start_node = 0
-            path = self.DFSDirected(start_node, visited_edge)
-            end = time.time()
+            path = self.DFSDirected(start_node, visited_edge, [])
             if path:
                 path_returned = []
                 for i in path:
                     path_returned.append(i + 1)
-                print("Directed graph:", path_returned, end - start)
+                print("Directed graph:", path_returned)
             else:
-                print("Directed graph: Graf wejściowy nie zawiera cyklu.", end - start, "s")
+                print("Directed graph: Graf wejściowy nie zawiera cyklu.")
 
-    def DFSDirected(self, u, visited_edge, path=None):
-        if path is None:
-            path = []
+    def DFSDirected(self, u, visited_edge, path):
         path = path + [u]
         for v in self.directed_graph[u]:
             if not visited_edge[u][v]:
@@ -230,25 +225,21 @@ class Graph:
     ###############################################################################
 
     def EulerCycleUndirected(self):
-        start = time.time()
         if len(self.undirected_graph) > 0:
             max_node = len(self.undirected_graph)
             visited_edge = [[False for _ in range(max_node + 1)] for _ in range(max_node + 1)]
             start_node = 0
-            path = self.DFSUndirected(start_node, visited_edge)
-            end = time.time()
+            path = self.DFSUndirected(start_node, visited_edge, [])
             if path:
                 self.hasEulerCycleUndirected = True
                 path_returned = []
                 for i in path:
                     path_returned.append(i + 1)
-                print("Undirected graph:", path_returned, end - start, "s")
+                print("Undirected graph:", path_returned)
             else:
-                print("Undirected graph: Graf wejściowy nie zawiera cyklu.", end - start, "s")
+                print("Undirected graph: Graf wejściowy nie zawiera cyklu.")
 
-    def DFSUndirected(self, u, visited_edge, path=None):
-        if path is None:
-            path = []
+    def DFSUndirected(self, u, visited_edge, path):
         path = path + [u]
         for v in range(len(self.undirected_graph[u])):
             if not visited_edge[u][v] and self.undirected_graph[u][v] == 1:
