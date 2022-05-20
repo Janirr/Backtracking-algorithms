@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0efc752a-32b6-41dc-b4bb-35174c83d741" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/EulerDirected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/EulerUndirected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/HamiltonDirected.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/HamiltonUndirected.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data" beforeDir="false" afterPath="$PROJECT_DIR$/data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jakub Januszewski &lt;janir3g@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\PUT Devs\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="286Q8KEBu1iNn9JguePjH71F3Dw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PUT Devs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Obiektowo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PUT Devs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Obiektowo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PUT Devs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graph.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PUT Devs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="menu" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PUT Devs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/menu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PUT Devs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/xd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.graph" />
+        <item itemvalue="Python.menu" />
+        <item itemvalue="Python.Obiektowo" />
+        <item itemvalue="Python.xd" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added Euler Cycle" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/Janirr/backtracking-algorithms&#10;&#10;# Conflicts:&#10;#&#9;menu.py" />
+    <MESSAGE value="Ignoring pychache files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignoring pychache files" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="146" key="#Obiektowo" timestamp="1651526939635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="146" key="#Obiektowo/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651526939635" />
+    <state x="735" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1652461677532">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652461677532" />
+    <state x="2655" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1651136257179" />
+    <state x="679" y="146" key="#graph" timestamp="1651573377115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="146" key="#graph/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651573377115" />
+    <state x="614" y="94" key="CommitChangelistDialog2" timestamp="1652118794488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="94" key="CommitChangelistDialog2/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652118794488" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1652118167676">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652118167676" />
+    <state width="1899" height="294" key="GridCell.Tab.0.bottom" timestamp="1653070322360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="294" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1653070322360" />
+    <state width="1899" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1652863720391" />
+    <state width="1899" height="294" key="GridCell.Tab.0.center" timestamp="1653070322360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="294" key="GridCell.Tab.0.center/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1653070322360" />
+    <state width="1899" height="272" key="GridCell.Tab.0.center/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1652863720390" />
+    <state width="1899" height="294" key="GridCell.Tab.0.left" timestamp="1653070322359">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="294" key="GridCell.Tab.0.left/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1653070322359" />
+    <state width="1899" height="272" key="GridCell.Tab.0.left/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1652863720390" />
+    <state width="1899" height="294" key="GridCell.Tab.0.right" timestamp="1653070322360">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="294" key="GridCell.Tab.0.right/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1653070322360" />
+    <state width="1899" height="272" key="GridCell.Tab.0.right/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1652863720391" />
+    <state width="1899" height="359" key="GridCell.Tab.1.bottom" timestamp="1652125550887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652125550887" />
+    <state width="1899" height="359" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1651146275559" />
+    <state width="1899" height="359" key="GridCell.Tab.1.center" timestamp="1652125550886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652125550886" />
+    <state width="1899" height="359" key="GridCell.Tab.1.center/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1651146275558" />
+    <state width="1899" height="359" key="GridCell.Tab.1.left" timestamp="1652125550886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652125550886" />
+    <state width="1899" height="359" key="GridCell.Tab.1.left/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1651146275558" />
+    <state width="1899" height="359" key="GridCell.Tab.1.right" timestamp="1652125550887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1652125550887" />
+    <state width="1899" height="359" key="GridCell.Tab.1.right/0.0.1920.1040/1920.1.1920.1040@1920.1.1920.1040" timestamp="1651146275559" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1651935156242">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651935156242" />
+    <state x="672" y="236" key="MultipleFileMergeDialog" timestamp="1651935156263">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="672" y="236" key="MultipleFileMergeDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651935156263" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1651692931726">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651692931726" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1651937351853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651937351853" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1651138587152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1651138587152" />
+  </component>
+</project>
